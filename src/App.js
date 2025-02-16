@@ -8,7 +8,23 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import { ChatBubble, Home, OneKk, } from "@mui/icons-material";
 import { ListItemText } from "@mui/material";
 import { Button } from "@mui/material";
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+
 function App() {
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#1976d2',
+    },
+  },
+});
+
+ 
   const responsiveDrawer = (
 
     <div style={{
@@ -17,7 +33,7 @@ function App() {
       <List >
         <ListItemButton >
           <ListItemIcon >
-            <Home />
+            <Home  color='secondary'/>
           </ListItemIcon>
         </ListItemButton>
         <ListItemButton >
@@ -84,6 +100,8 @@ function App() {
     </Box>
   )
   return (
+    <ThemeProvider theme={theme}>
+
     <div>
       < center >
         {["left", "right"].map((anchor) => (
@@ -122,6 +140,8 @@ function App() {
         </Box>
       </div>
     </div >
+    </ThemeProvider>
+
   );
 }
 
