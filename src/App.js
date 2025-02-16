@@ -12,17 +12,16 @@ function App() {
   const responsiveDrawer = (
 
     <div style={{
-      backgroundColor: "black",
       height: "100%",
     }}>
       <List >
-        <ListItemButton sx={{ color: "white", margin: '10px' }}>
-          <ListItemIcon sx={{ color: "white", margin: '10px' }}>
+        <ListItemButton >
+          <ListItemIcon >
             <Home />
           </ListItemIcon>
         </ListItemButton>
-        <ListItemButton sx={{ color: "white", margin: '10px' }}>
-          <ListItemIcon sx={{ color: "white", margin: '10px' }}>
+        <ListItemButton >
+          <ListItemIcon >
             <ChatBubble />
           </ListItemIcon>
         </ListItemButton>
