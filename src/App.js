@@ -40,7 +40,8 @@ function App() {
   //   </Box>
   // )
   return (
-    SimpleBottomNavigation()
+    <SimpleBottomNavigation></SimpleBottomNavigation>
+    
     //   <ThemeProvider theme={theme}>
 
     //   <div>
