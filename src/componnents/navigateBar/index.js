@@ -1,10 +1,14 @@
 import "./index.css"
 import React from "react";
 import { ChatBubble, Home } from "@mui/icons-material";
-import { Box, BottomNavigation, BottomNavigationAction, List, ToggleButtonGroup } from "@mui/material";
+import { Link } from "react-router-dom";
+import { Box, BottomNavigation, BottomNavigationAction, ToggleButtonGroup } from "@mui/material";
+
 export default function SimpleBottomNavigation() {
+
     const [value, setValue] = React.useState(0);
     const [direction, setDirection] = React.useState('ltr')
+
     return (
         <div>
             <BottomNavigation
@@ -19,8 +23,8 @@ export default function SimpleBottomNavigation() {
             </BottomNavigation>
             <Box dir={direction}>
                 <ToggleButtonGroup orientation="vertical" >
-                    <BottomNavigationAction label="chatBubble" icon={<ChatBubble />} />
-                    <BottomNavigationAction label="home" icon={<Home />} />
+                    <BottomNavigationAction icon={<Link to='/router/home'><Home /></Link>} label="home" />
+                    <BottomNavigationAction icon={<Link to='/router/chat'><ChatBubble /></Link>} label="chatBubble" />
                 </ToggleButtonGroup>
             </Box>
         </div>
