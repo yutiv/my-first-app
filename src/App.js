@@ -19,8 +19,8 @@ function App() {
     <BrowserRouter>
       <SimpleBottomNavigation />
       <Routes>
-        <Route path='/home' element={<HelloHome />}> </Route>
-        <Route path='/chat' element={<HelloChat />}> </Route>
+        <Route path='/home' element={<HelloHome />}/> 
+        <Route path='/chat' element={<HelloChat />}/> 
       </Routes>
     </BrowserRouter>
   );
