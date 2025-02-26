@@ -1,8 +1,8 @@
 import React from "react";
-export default function HelloHome() {
+const HelloHome = () => {
     return (<>
         <h1>Home</h1>
     </>
     );
-};
+}
 export { HelloHome }

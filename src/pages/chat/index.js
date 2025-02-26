@@ -1,5 +1,5 @@
 import React from "react";
-export default function HelloChat() {
+const HelloChat = () => {
 
     return (<>
         <h1>Chat</h1>
