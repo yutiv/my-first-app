@@ -1,0 +1,21 @@
+p {
+    direction: ltr;
+    border-radius: 10px;
+    background-color: gray;
+    width: 100px;
+    text-align: center;
+}
+
+#p {
+    direction: rtl;
+    border-radius: 10px;
+    background-color: blue;
+    margin-left:1250px;
+    text-align: center;
+}
+
+#divi {
+    margin-left: 50%;
+    margin-top: 25%;
+    position: absolute;
+}
