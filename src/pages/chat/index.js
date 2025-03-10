@@ -22,7 +22,8 @@ const HelloChat = () => {
         <div id="container">
             <h1>Chat</h1>
             <div id="divi">
-                <input type="button" value='click' onClick={() => user()}></input>
+                <input type="text" id="input"></input>
+                <input type="button" value='click' id="1" onClick={() => user()}></input>
             </div>
         </div>
     </>
