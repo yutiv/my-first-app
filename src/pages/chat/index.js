@@ -1,29 +1,55 @@
 import React from "react";
 import "./index.css";
+import { FormControl, TextField, IconButton, InputAdornment, Avatar } from "@mui/material";
+import { Send } from "@mui/icons-material"
 const HelloChat = () => {
-    const [createp, setCreatep] = React.useState('')
-    const [createp2, setCreatep2] = React.useState('')
+    const [avatar, setAvatar] = React.useState('')
+    const [valInput, setValInput] = React.useState('');
+    const handleChange = (event) => {
+        setValInput(event.target.value);
+    };
+
     const user = () => {
         const container = document.getElementById('container');
         const newElement = document.createElement('p');
+        const newAvatar = document.createElement('Avatar');
+
         if (document.getElementById('1')) {
-            setCreatep(document.querySelector('#input').value)
-            newElement.innerHTML = createp
+            if (avatar != 'I') {
+                setAvatar('I')
+                newAvatar.id = 'avatar'
+                newAvatar.innerHTML = avatar
+                container.appendChild(newAvatar);
+            }
+            newElement.innerHTML = valInput
         }
         else {
             newElement.id = "p"
-            setCreatep2(document.querySelector('#input').value)
-            newElement.innerHTML = createp2
+            newAvatar.id = 'avatar1'
+            if (avatar != 'y') {
+                setAvatar('y')
+                newAvatar.innerHTML = avatar
+                container.appendChild(newAvatar);
+            }
+            newElement.innerHTML = valInput
         }
         container.appendChild(newElement);
-        document.querySelector('#input').value = ''
     }
     return (<>
         <div id="container">
-            <h1>Chat</h1>
-            <div id="divi">
-                <input type="text" id="input"></input>
-                <input type="button" value='click' id="1" onClick={() => user()}></input>
+            <div id="textField" >
+                <FormControl id="formControl" orientation="vertical">
+                    <TextField label="Type a message" onChange={handleChange}
+                        InputProps={{
+                            endAdornment: (
+                                <InputAdornment position="end">
+                                    <IconButton onClick={() => user()} ><Send id="send" /></IconButton>
+                                </InputAdornment>
+                            )
+                        }}
+                    >
+                    </ TextField>
+                </FormControl>
             </div>
         </div>
     </>

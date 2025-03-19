@@ -1,21 +1,69 @@
 p {
+    height: 37px;
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    background-color: #f1f1f1;
     direction: ltr;
-    border-radius: 10px;
-    background-color: gray;
-    width: 100px;
-    text-align: center;
+    width: min-content;
+    text-align: center;   
 }
-
 #p {
     direction: rtl;
-    border-radius: 10px;
-    background-color: blue;
-    margin-left: 1250px;
-    text-align: center;
+    margin-left:auto;
+    width: min-content;
+    height: 37px;
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    background-color: #615EF0;
 }
 
-#divi {
-    margin-left: 50%;
-    margin-top: 25%;
-    position: absolute;
+#textField {
+   /*  border-radius: 12px;
+    border: 2px;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: white; */
+}
+
+#send {
+    color: #615ef0;
+    Width: 18.89px;
+    Height: 18.88px;
+    Top: 2.56px;
+    Left: 2.56px
+}
+
+#formControl {
+    position: relative;
+    top: 495px;
+    left: 500px;
+    /* bottom: 0px; */
+    /* height: auto; */
+}
+#avatar {
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    background-color: red;
+     display: inline
+}
+#avatar1{
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    background-color: red;
+    margin-left: 1480px;
 }
