@@ -19,8 +19,8 @@ export default function SimpleBottomNavigation() {
                     setValue(newValue);
                 }}
             >
-                <BottomNavigationAction label="left" onClick={() => { setDirection('ltr') }} />
-                <BottomNavigationAction label="right" onClick={() => { setDirection('rtl') }} />
+                {/* <BottomNavigationAction label="left" onClick={() => { setDirection('ltr') }} /> */}
+                {/* <BottomNavigationAction label="right" onClick={() => { setDirection('rtl') }} /> */}
             </BottomNavigation>
             <Box dir={direction} >
                 <ToggleButtonGroup orientation={match ? 'vertical' : 'horizontal'}>
