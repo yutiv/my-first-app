@@ -111,3 +111,11 @@
     width: 100%;
     height: 100%;
 }
+
+
+/* {messageall.map(m => (m.key) == "message1"? 
+    let lastMsg
+    if(lastMsg!== m.key){'avatar'}
+    <p className="message1"> {m.value}</p> 
+    :<p className="message2">{m.value}</p> )
+    lastMsg = m.key} */
